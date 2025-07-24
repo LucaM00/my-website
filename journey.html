@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Journey - Luca Maria Menga</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="journey.html">The Journey</a></li>
+                <li><a href="journey.html" class="active">The Journey</a></li>
                 <li><a href="horizon.html">The Horizon</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li>
+                <li class="dropdown-container">
                     <a href="#">Writings</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-menu">
                         <li><a href="writings-cornerstone.html">The Cornerstone</a></li>
                         <li><a href="writings-insights.html">Insights</a></li>
                         <li><a href="writings-milestones.html">Milestones</a></li>
@@ -26,34 +29,44 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <h2>The Journey</h2>
-            <section class="content-section">
-                <h3>The Origin</h3>
-                <p>My education at Liceo Berchet, rooted in classical studies, was not a detour, but the genesis of my ability to discern the inherent "architecture" in complex systems. This skill, refined through the analysis of ancient texts and timeless philosophies, proved fundamental in my scientific journey, allowing me to apply a unique perspective to biology.</p>
-            </section>
-            <section class="content-section">
-                <h3>The Turning Point</h3>
-                <p>The MEDTEC program represented the crucial moment when my humanistic and scientific interests began to formally synthesize into a coherent path. Here, I discovered how the rigorous logic of engineering could integrate with the profound understanding of life offered by medicine, creating a synergy that would define my future research.</p>
-            </section>
-            <section class="content-section">
-                <h3>The Path of Exploration</h3>
-                <p>My research experiences have been distinct chapters of a deliberate journey aimed at forging a multidisciplinary toolkit. From mastering the "grammar" of gene editing at CSUN, to using CRISPR to map complex systems at Harvard, up to integrating computational modeling with wet-lab science at Stanford/IEO, each stage has enriched my ability to tackle biological challenges from different perspectives.</p>
-            </section>
-            <section class="content-section">
-                <h3>The Grounding Force</h3>
-                <p>My field research in public health in Madagascar reinforced my "why," connecting my advanced research to tangible human needs and global health realities. This experience reminded me of the importance of applying scientific knowledge to generate a concrete and significant impact on people's lives.</p>
-            </section>
-            <section class="content-section">
-                <h3>The Vision Forward</h3>
-                <p>These integrated experiences have solidified my mission: to build new frameworks for understanding and solving complex biological problems. My path is now firmly oriented towards the horizon, where future aspirations will materialize into innovative solutions for the benefit of society and clinics.</p>
-            </section>
+    <main class="container fade-in">
+        <div class="journey-grid">
+            <div class="journey-narrative">
+                <h2>The Journey</h2>
+                <section>
+                    <h4>The Origin</h4>
+                    <p>My foundation in classical studies was not a detour from science, but an education in seeing its architecture. It taught me to find the underlying structures in complex systems—a skill I now apply not to ancient texts, but to the code of life itself.</p>
+                </section>
+            </div>
+            <div class="journey-image">
+                <!-- A professional, thoughtful portrait works best here -->
+                <img src="images/portrait.jpg" alt="Luca Maria Menga" class="portrait">
+            </div>
         </div>
+
+        <hr class="separator">
+
+        <section>
+            <h4>The Path of Exploration</h4>
+            <p>The MEDTEC program was the turning point, the formal synthesis of medicine and engineering that gave my path its direction. From there, each research experience became a deliberate step in forging a multidisciplinary toolkit: mastering the grammar of gene editing at CSUN, using CRISPR to map the complexity of the brain at Harvard, and integrating computational models with wet-lab science at Stanford. Each step was chosen to build a more complete framework for solving biological problems.</p>
+        </section>
+
+        <hr class="separator">
+
+        <section>
+            <h4>The Grounding Force</h4>
+            <p>My work in public health in Madagascar provided the essential "why." It grounded my research in tangible human needs, reinforcing the belief that the purpose of advancing science is to generate a concrete, meaningful impact on people's lives, especially in places where it is needed most.</p>
+        </section>
+        
+        <hr class="separator">
+
+        <section>
+            <h4>The Vision Forward</h4>
+            <p>These integrated experiences have solidified my mission. My path is now firmly oriented toward the horizon—to building new frameworks for understanding biology and engineering innovative solutions for the benefit of society and the clinic.</p>
+        </section>
     </main>
     <footer>
-        <!-- Footer content will go here -->
+        <p>© 2025 Luca Maria Menga</p>
     </footer>
 </body>
 </html>
-
