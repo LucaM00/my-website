@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Horizon - Luca Maria Menga</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,11 +15,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="journey.html">The Journey</a></li>
-                <li><a href="horizon.html">The Horizon</a></li>
+                <li><a href="horizon.html" class="active">The Horizon</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li>
+                <li class="dropdown-container">
                     <a href="#">Writings</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-menu">
                         <li><a href="writings-cornerstone.html">The Cornerstone</a></li>
                         <li><a href="writings-insights.html">Insights</a></li>
                         <li><a href="writings-milestones.html">Milestones</a></li>
@@ -26,26 +29,30 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <h2>The Horizon</h2>
-            <section class="content-section">
-                <h3>The Confluence</h3>
-                <p>We are at a unique historical moment where the ability to read and write biology through genomics and synthetic biology is converging with our ability to understand complexity through artificial intelligence and machine learning. This confluence represents an unprecedented opportunity to redefine the boundaries of medicine and biotechnology.</p>
-            </section>
-            <section class="content-section">
-                <h3>The Next Architecture of Biology</h3>
-                <p>This convergence allows us to envision and achieve concrete, visionary goals: "programmable medicines" that act as dynamic circuits within the human body, AI-designed biological systems that transcend what evolution has produced, and personalized therapies that adapt in real-time to patient needs. We are building a new architecture of biology, where rational design meets natural complexity.</p>
-            </section>
-            <section class="content-section">
-                <h3>My Role</h3>
-                <p>My goal is to be one of the architects who responsibly and ethically builds these new systems, always with a focus on societal and clinical benefit. Through the integration of diverse disciplines and the application of innovative methodologies, I aspire to contribute to the creation of solutions that not only advance scientific knowledge but also concretely improve human life.</p>
-            </section>
-        </div>
+    <main class="container fade-in">
+        <h2>The Horizon</h2>
+        
+        <section>
+            <h4>The Confluence</h4>
+            <p>We stand at a unique confluence in history. For the first time, our ability to read and write the code of life through genomics and synthetic biology is maturing alongside our ability to understand immense complexity through artificial intelligence. This is not just a technical advance; it is a fundamental shift in our capacity to interact with the biological world.</p>
+        </section>
+
+        <hr class="separator">
+
+        <section>
+            <h4>The Next Architecture of Biology</h4>
+            <p>This convergence allows us to move beyond discovery and toward design. We can now realistically envision "programmable medicines" that act as dynamic, responsive circuits within the body, or use AI to design novel biological systems that transcend the boundaries of natural evolution. We are transitioning from being students of biology to becoming its architects.</p>
+        </section>
+        
+        <hr class="separator">
+
+        <section>
+            <h4>My Role</h4>
+            <p>My goal is to be one of those architects—to help build these new systems responsibly, ethically, and with a constant focus on human and societal benefit. By integrating diverse disciplines, I aim to contribute to a future where we can engineer biology to solve our most pressing challenges in health and disease.</p>
+        </section>
     </main>
     <footer>
-        <!-- Footer content will go here -->
+        <p>© 2025 Luca Maria Menga</p>
     </footer>
 </body>
 </html>
-
