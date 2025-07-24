@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luca Maria Menga</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="journey.html">The Journey</a></li>
                 <li><a href="horizon.html">The Horizon</a></li>
                 <li><a href="research.html">Research</a></li>
-                <li>
+                <li class="dropdown-container">
                     <a href="#">Writings</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-menu">
                         <li><a href="writings-cornerstone.html">The Cornerstone</a></li>
                         <li><a href="writings-insights.html">Insights</a></li>
                         <li><a href="writings-milestones.html">Milestones</a></li>
@@ -26,21 +29,16 @@
             </ul>
         </nav>
     </header>
-    <main class="home-page">
+    <main class="home-container fade-in">
         <h1>Luca Maria Menga</h1>
-        <p class="tagline"><em>An architect's approach to a biological future.</em></p>
-        <div class="image-placeholder">
-            <!-- Insert your main image here -->
-            <img src="images/placeholder_main.jpg" alt="Luca Maria Menga Portrait">
-        </div>
-        <blockquote class="seneca-quote">
+        <p class="tagline">An architect's approach to a biological future.</p>
+        <blockquote>
             "The time will come when diligent research over long periods will bring to light things which now lie hidden... There will come a time when our descendants will be amazed that we did not know things that are so plain to them."
         </blockquote>
         <p class="reflection">This is the compass that guides my work.</p>
     </main>
     <footer>
-        <!-- Footer content will go here -->
+        <p>© 2025 Luca Maria Menga</p>
     </footer>
 </body>
 </html>
-
