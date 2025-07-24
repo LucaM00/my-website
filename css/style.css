@@ -146,6 +146,7 @@ main {
     background-color: #f7fafc;
     font-style: italic;
     color: #2d3748;
+    quotes: none;
 }
 
 .reflection {
