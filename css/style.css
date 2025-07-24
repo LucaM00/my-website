@@ -432,3 +432,23 @@ main {
     text-align: center;
     border-radius: 6px;
 }
+
+/* ---- Thesis Page Specifics ---- */
+
+.content-section ul {
+    list-style-type: circle; /* This changes the bullet point to an empty circle */
+    padding-left: 25px;      /* Adjusts the indentation of the list */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section li {
+    padding-left: 10px;      /* Adds a little space between the bullet and text */
+    margin-bottom: 0.75rem;  /* Consistent spacing between list items */
+}
+
+/* This is the key fix for font size consistency */
+.content-section p,
+.content-section li {
+    font-size: 1.1rem; /* Matches the font size you defined for your 'p' tags */
+}
