@@ -416,10 +416,19 @@ main {
     }
 }
 
-/* ---------- TEMPORARY ---------- *
-   Hide unfinished links in the nav
-   Remove this block when pages are live
----------------------------------- */
+
+/* ---- temporary: hide menu items ---- */
 .nav-item--hidden {
     display: none !important;
+}
+
+/* ---- friendly construction notice ---- */
+.site-alert {
+    background: #fffbe6;
+    border: 1px solid #f1e5ad;
+    margin: 0 0 1.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    border-radius: 6px;
 }
