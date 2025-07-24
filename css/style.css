@@ -416,3 +416,10 @@ main {
     }
 }
 
+/* ---------- TEMPORARY ---------- *
+   Hide unfinished links in the nav
+   Remove this block when pages are live
+---------------------------------- */
+.nav-item--hidden {
+    display: none !important;
+}
