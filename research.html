@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Luca Maria Menga</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,10 +16,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="journey.html">The Journey</a></li>
                 <li><a href="horizon.html">The Horizon</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li class="dropdown-container">
                     <a href="#">Writings</a>
-                    <ul class="dropdown">
+                    <ul class="dropdown-menu">
                         <li><a href="writings-cornerstone.html">The Cornerstone</a></li>
                         <li><a href="writings-insights.html">Insights</a></li>
                         <li><a href="writings-milestones.html">Milestones</a></li>
@@ -26,62 +29,49 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <h2>Research</h2>
-            <p>My research philosophy is based on the conviction that solving the most difficult problems requires an integrated, multi-pronged approach that connects the experimental and the computational. Each project represents an opportunity to build bridges between different disciplines.</p>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3>Barcoding Neural Circuits with Base Editors</h3>
-                    <div class="research-image-placeholder">
-                        <img src="images/placeholder_research1.jpg" alt="Research Project 1 Image">
-                    </div>
-                    <p class="core-question"><strong>The Core Question:</strong> How can we trace and manipulate specific neural circuits with molecular precision?</p>
-                    <p><strong>The Integrated Approach:</strong> We combined high-throughput CRISPR screening in HEK293 cells with deep sequencing data analysis to develop a barcoding system that allows tracing of single neural cells across generations. The approach integrates gene editing techniques with advanced computational analysis.</p>
-                    <p class="key-insight"><em>The Key Insight:</em> Molecular precision in gene editing can be leveraged to create biological "barcodes" that reveal the history and function of neural circuits, opening new possibilities for neurobiology and regenerative medicine.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Publication</a>
-                        <a href="#" class="btn">See Presentation</a>
-                        <a href="#" class="btn">Explore Code</a>
-                    </div>
-                </div>
-                
-                <div class="research-card">
-                    <h3>CHI3L1-RAGE Complex in Cancer Resistance</h3>
-                    <div class="research-image-placeholder">
-                        <img src="images/placeholder_research2.jpg" alt="Research Project 2 Image">
-                    </div>
-                    <p class="core-question"><strong>The Core Question:</strong> How do immunosuppressive protein complexes contribute to therapeutic resistance in HER2+ breast cancer?</p>
-                    <p><strong>The Integrated Approach:</strong> We used an approach combining computational structural analysis, coevolutionary studies, and experimental validation to characterize the CHI3L1-RAGE complex. The integration of structural bioinformatics and molecular biology allowed the identification of new therapeutic targets.</p>
-                    <p class="key-insight"><em>The Key Insight:</em> Structural understanding of immunosuppressive complexes can reveal previously hidden therapeutic vulnerabilities, offering new strategies to overcome drug resistance in cancer.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Publication</a>
-                        <a href="#" class="btn">See Presentation</a>
-                        <a href="#" class="btn">Explore Code</a>
-                    </div>
-                </div>
-                
-                <div class="research-card">
-                    <h3>Computational Modeling of Biological Systems</h3>
-                    <div class="research-image-placeholder">
-                        <img src="images/placeholder_research3.jpg" alt="Research Project 3 Image">
-                    </div>
-                    <p class="core-question"><strong>The Core Question:</strong> How can we predict the behavior of complex biological systems through computational models?</p>
-                    <p><strong>The Integrated Approach:</strong> We develop mathematical models that integrate multi-omic experimental data with machine learning algorithms to predict cellular dynamics and therapeutic responses. The approach combines systems theory, big data analysis, and experimental validation.</p>
-                    <p class="key-insight"><em>The Key Insight:</em> Computational models can serve as "telescopes" for biology, allowing us to see patterns and dynamics that would be invisible through direct experimental observation.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn">View Publication</a>
-                        <a href="#" class="btn">See Presentation</a>
-                        <a href="#" class="btn">Explore Code</a>
-                    </div>
-                </div>
+    <main class="container fade-in">
+        <h2>Research</h2>
+        <p class="research-intro">My research philosophy is to approach complex problems with an integrated, multi-pronged framework that bridges the experimental and the computational. Each project is an effort to build a more complete model of a biological system.</p>
+
+        <div class="research-project">
+            <h3>Barcoding Neural Circuits with Base Editors</h3>
+            <p class="core-question">How can we create a high-diversity genetic recording system to map the architecture of the brain?</p>
+            <p>By combining high-throughput CRISPR screening in HEK293 cells with deep sequencing, we engineered a method to generate millions of unique genetic "barcodes." This work serves as a proof-of-concept for tracing the lineage and connectivity of single cells in complex biological systems like the brain.</p>
+            <p class="key-insight">The precision of gene editing can be scaled to create immense biological diversity, transforming it from a corrective tool into a powerful system for observation and mapping.</p>
+            <div class="project-links">
+                <a href="#">See Presentation</a>
+                <a href="#">Explore Code (In Progress)</a>
             </div>
         </div>
+
+        <hr class="separator">
+        
+        <div class="research-project">
+            <h3>Decoding a Cancer Immunosuppressive Complex</h3>
+            <p class="core-question">How does the CHI3L1-RAGE protein complex contribute to therapeutic resistance in breast cancer?</p>
+            <p>This project integrated computational structural biology (AlphaFold2, PyMOL), co-evolutionary analysis, and experimental biophysics (mass photometry, crystallography) to build a high-confidence model of a previously intractable immunosuppressive interface, revealing its mechanism of action.</p>
+            <p class="key-insight">When direct observation is limited, a synthesis of computational modeling and experimental data can illuminate the structural logic of biology and reveal new therapeutic vulnerabilities.</p>
+            <div class="project-links">
+                <a href="writings-cornerstone.html">View Thesis</a>
+                <a href="#">View Publication (In Progress)</a>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <div class="research-project">
+            <h3>Engineering Bacterial Metabolism</h3>
+            <p class="core-question">Can we rationally engineer the fundamental metabolic pathways of an organism for applied purposes?</p>
+            <p>Using the Lambda Red recombinase system, we engineered the genome of Salmonella enterica to create specific auxotrophic strains. This foundational work involved mastering core molecular biology techniques from plasmid purification to electroporation and PCR optimization.</p>
+            <p class="key-insight">Understanding and mastering the fundamental grammar of gene editing is the essential first step toward designing more complex and ambitious biological systems.</p>
+            <div class="project-links">
+                <a href="#">View Lab Report</a>
+            </div>
+        </div>
+
     </main>
     <footer>
-        <!-- Footer content will go here -->
+        <p>© 2025 Luca Maria Menga</p>
     </footer>
 </body>
 </html>
-
